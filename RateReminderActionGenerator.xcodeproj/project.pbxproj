@@ -6,9 +6,13 @@
 	objectVersion = 55;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		23321C17279047CE008D811E /* RateReminderScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23321C16279047CE008D811E /* RateReminderScript.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		23321C0727903E96008D811E /* RateReminderActionGenerator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RateReminderActionGenerator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		23321C1127903ED8008D811E /* RateReminderScript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateReminderScript.swift; sourceTree = "<group>"; };
+		23321C16279047CE008D811E /* RateReminderScript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateReminderScript.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +45,7 @@
 		23321C0927903E96008D811E /* RateReminderActionGenerator */ = {
 			isa = PBXGroup;
 			children = (
-				23321C1127903ED8008D811E /* RateReminderScript.swift */,
+				23321C16279047CE008D811E /* RateReminderScript.swift */,
 			);
 			path = RateReminderActionGenerator;
 			sourceTree = "<group>";
@@ -147,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23321C17279047CE008D811E /* RateReminderScript.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
