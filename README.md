@@ -19,7 +19,7 @@ If all you want to do is add this generator to your project to make use of this 
     This will be the file that will be written to with the actions you will need. It should be available in all the targets that require to send these actions to the NStack SDK.
     You can ADD this wherever you would like but I recommend keeping all NStack files close together in a resources directory.
     If you are also using NStack for localizations, I suggest keeping the generated files together like this. 
-    <p align="center"><img src="./ReadMeFileManagementSuggestion.png?raw=true" alt="ReadMeFileManagementSuggestion"/></p>
+    <p align="center"><img src="./ReadMeFileManagementSuggestion.png?raw=true" alt="ReadMeFileManagementSuggestion" style="width:50%;height:50%;/></p>
     
 3. Place the downloaded generator into where you would like to store it. Note this should be within your project files but it should not be added to any targets within your project. If yuo are using localizations also, I suggest keeping this alongside wherever you haave chosen to keep your `nstack-localizations-generator.bundle`
 
