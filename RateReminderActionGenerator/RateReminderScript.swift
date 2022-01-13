@@ -96,9 +96,27 @@ enum MyScript {
         }
         
         indent = indent.previousLevel()
-        result += indent.string() + "}\n"
+        result += indent.string() + "}\n\n"
+        
+        result += "extension RateReminderAction: RateReminderActionProtocol {\n"
+        
+        indent = indent.nextLevel()
+        result += indent.string()
+        result += "public var actionString: String {\n"
+        
+        indent = indent.nextLevel()
+        result += indent.string()
+        result += "self.rawValue\n"
+        
+        indent = indent.previousLevel()
+        result += indent.string()
+        result += "}\n"
+        
+        indent = indent.previousLevel()
+        result += indent.string() + "}\n\n"
         
         return result
+
     }
     
     private static func keysFromConfigurationFile(plistPath: String) throws -> KeysConfig {
