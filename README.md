@@ -1,11 +1,11 @@
 # nstack-rate-reminder-action-generator
 
+A tool to generate rate reminder actions from the [NStack](http://nstack.io) API. 
+
 In NStack V2, rate reminders have advanced allowing for clients to define events and assign points to them. Users will then be prompted to rate the app only when specific events have been triggered and points have been accumulated. 
 Please see [here](https://nstack-io.github.io/docs/docs/features/rate-reminder.html) for more information on this feature. 
 
 This generator allows you to pass this single build phase tool into your project and on each build, it will generate an enum of all the required actions. It should be used in tandem with the NStack SDK, where you will then be able to pass these event actions to the NStack SDK which will then evaluate annd return whether a rate app alert should be prompted.
-
-A tool to generate rate reminder actions from the [NStack](http://nstack.io) API. 
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/nodes-ios/nstack-localizations-generator/blob/master/LICENSE)
 ![Plaform](https://img.shields.io/badge/platform-osx-lightgrey.svg)
