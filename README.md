@@ -13,7 +13,7 @@ This generator allows you to pass this single build phase tool into your project
 ## 📦 How to add it to your project
 If all you want to do is add this generator to your project to make use of this feature, follow the next steps;
 
-1. First download the latest RateReminderGenerator from the releases [here](https://github.com/nodes-ios/nstack-rate-reminder-action-generator/releases). You shuld be able to download just the generator from the Assets section. This is the only file you will need to download.
+1. First download the latest RateReminderGenerator from the releases [here](https://github.com/nodes-ios/nstack-rate-reminder-action-generator/releases). You should be able to download and unzip the generator from the Assets section. This is the only file you will need to download.
 
 2. Create a file in your project named `RateReminderActions.swift`. 
     This will be the file that will be written to with the actions you will need. It should be available in all the targets that require to send these actions to the NStack SDK.
@@ -57,7 +57,7 @@ This contains all the code that the gennerator executes so any changes should be
 
 Once you have completed your changes, build the framework and a new generator will be created for you in the root folder of this project. This is done in the build phase of the framework. 
 
-For ease of access to other developers, you should then upload the generator tool to the github releases page along with a tagged release so others can download just the generator without having to download this whole project.
+For ease of access to other developers, you should then compress & upload the generator tool to the github releases page along with a tagged release so others can download just the generator without having to download this whole project. Note the generator will have to be zipped for this to work.
 
 ## 👥 Credits
 Made with ❤️ at [Nodes](http://nodesagency.com).
