@@ -34,7 +34,15 @@ If all you want to do is add this generator to your project to make use of this 
     TL_OUT_PATH="${SRCROOT}/${TL_PROJ_ROOT_FOLDER}/Resources/NStack"
     TL_CONFIG_PATH="${SRCROOT}/${TL_PROJ_ROOT_FOLDER}/Resources/NStack/NStack.plist"
 
-    "${TL_GEN_PATH}" -plist "${TL_CONFIG_PATH}" -output "${TL_OUT_PATH}"
+    # Check if doing a clean build
+    if test -f "${DERIVED_FILE_DIR}/RateReminderGenerator.lock"; then
+        echo "Not clean build, won't fetch rate reminder actions this time."
+    else
+        echo "Clean build. Getting rate reminder actions..."
+        "${TL_GEN_PATH}" -plist "${TL_CONFIG_PATH}" -output "${TL_OUT_PATH}"
+        mkdir -p "${DERIVED_FILE_DIR}"
+        touch "${DERIVED_FILE_DIR}/RateReminderGenerator.lock" # create lock file
+    fi
     ```
 
     To define more; 
